@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- link bostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!--font goggle -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- link style -->
+    <link rel="stylesheet" href="./style.css/style.css">
+    <!-- logo title -->
+    <link rel="stylesheet" href="" type="image/x-icon">
+    <script src="script.js" defer></script>
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">s
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-white fixed-top p-3">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./img/2.png" alt="Logo" width="30" class="d-inline-block align-text-top me-3">
+                AtlantisPlus
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link " aria-current="page" href="index.html">BERANDA</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link active" href="pendaftaran.html">PENDAFTARAN</a>
+                        </li>
+                        <!-- <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">FREE</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">LMS</a>
+                        </li> -->
+                        <li class="nav-item dropdown mx-2">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                SEKOLAH
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">SMK</a></li>
+                                <li><a class="dropdown-item" href="#">SMP</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">LOGIN</a>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+    </nav>
+    <br><br><br><br><br>
+    <section>
+        <div class="container">
+            <h3 class="list my-4">IDENTITAS SAYA</h3>
+            <div class="row">
+                <div class="col-lg">
+                    <div class="h-100 p-4 h-100" style="background-color: #F6F6F6; border-radius: 10px;box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.25);">
+                        <div class="mx-3">
+                            <span class="stages">TAHAPAN PENDAFTARAN</span>
+                            <p class="regulation my-2">1. Format isian formulir ini sesuai dengan arahan sistem pendataan di Kemendikbud, Aplikasi Dapodik.</p>
+                            <p class="regulation my-2">2. Mengisi kolom formulir dengan LENGKAP, DATA CALON PESERTA DIDIK BARU, ORANGTUA/WALI.</p>
+                            <p class="regulation my-2">3. Setelah melakukan pengisian, check kembali data apakah sudah benar, lalu klik DAFTAR.</p>
+                            <p class="regulation my-2">4. Setelah sukses malakukan pendaftaran, silakan cek email yang telah didaftarkan untuk melihat no 
+                                pendaftaran.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container my-5">
+            <form action="">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Nama</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nama">
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="mb-3 my-4">
+                            <label for="exampleFormControlInput1" class="form-label">Jenis Kelamin</label>
+                            <select class="form-select form-select-lg mb-3"  aria-label=".form-select-lg example">
+                                <option selected>Laki - Laki</option>
+                                <option value="3">Perempuan</option>
+                                <i class="bi bi-chevron-down"></i>
+                            </select>
+                        </div>
+                        <div class="mb-3 my-5">
+                            <label for="exampleFormControlInput1" class="form-label">Pilih Agama</label>
+                            <select class="form-select form-select-lg mb-3"  aria-label=".form-select-lg example">
+                                <option selected>__ Pilih Agama __</option>
+                                <option value="3">1</option>
+                                <i class="bi bi-chevron-down"></i>
+                            </select>
+                        </div>
+                        <div class="mb-3 my-5">
+                            <label for="exampleFormControlInput1" class="form-label">Nama Sekolah Asal</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Asal Sekolah">
+                        </div>
+                        <div class="mb-3 my-5">
+                            <label for="exampleFormControlInput1" class="form-label">No.Telp/Handphone Siswa</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="No. Telp/Handphone">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="mb-3 my-4">
+                            <label for="exampleFormControlInput1" class="form-label">E-mail siswa/wali</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
+                        </div>
+                        <div class="mb-3 my-5">
+                            <label for="exampleFormControlInput1" class="form-label">Jenjang pendidikan yang dituju</label>
+                            <select class="form-select form-select-lg mb-3"  aria-label=".form-select-lg example">
+                                <option selected>__ Pilih Jenjang Pendidikan__</option>
+                                <option value="3">1</option>
+                                <i class="bi bi-chevron-down"></i>
+                            </select>
+                        </div>
+                        <div class="mb-3 my-5">
+                            <label for="exampleFormControlInput1" class="form-label">Nama Orangtua/Wali (Ayah/Ibu)</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nama Wali">
+                        </div>
+                        <div class="mb-3 my-5">
+                            <label for="exampleFormControlInput1" class="form-label">No. Telp Orangtua/Wali (Ayah/Ibu)</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="No. Telp Wali">
+                        </div>
+                    </div>
+
+                    <button class="button-list mx-auto my-5">
+                        Daftar
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+<!-- bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+</script>
+<!-- multi dropdown -->
+
+</html>
+
