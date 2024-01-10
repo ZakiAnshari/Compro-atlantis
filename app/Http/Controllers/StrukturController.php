@@ -23,7 +23,7 @@ class StrukturController extends Controller
         $newName='';
         if($request->file('gambar')){
             $extension = $request->file('gambar')->getClientOriginalExtension();
-            $newName =$request->nama.'-'.now()->timestamp.'.'.$extension;
+            $newName =$request->id.now()->timestamp.'.'.$extension;
             $request->file('gambar')->storeAs('image',$newName);
         }
 
@@ -44,7 +44,7 @@ class StrukturController extends Controller
     {   
         if($request->file('gambar')){
             $extension = $request->file('gambar')->getClientOriginalExtension();
-            $newName =$request->nama.'-'.now()->timestamp.'.'.$extension;
+            $newName =$request->id.now()->timestamp.'.'.$extension;
             $request->file('gambar')->storeAs('image',$newName);
             $request['image'] = $newName;
         }

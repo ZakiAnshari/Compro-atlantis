@@ -29,7 +29,7 @@ class ProgramUnggulanController extends Controller
 
         if($request->file('gambar')){
             $extension = $request->file('gambar')->getClientOriginalExtension();
-            $newName =$request->name.'-'.now()->timestamp.'.'.$extension;
+            $newName =$request->id.now()->timestamp.'.'.$extension;
             $request->file('gambar')->storeAs('image',$newName);
         }
 
@@ -48,7 +48,7 @@ class ProgramUnggulanController extends Controller
     {       
         if($request->file('gambar')){
             $extension = $request->file('gambar')->getClientOriginalExtension();
-            $newName =$request->name.'-'.now()->timestamp.'.'.$extension;
+            $newName =$request->id.now()->timestamp.'.'.$extension;
             $request->file('gambar')->storeAs('image',$newName);
             $request['image'] = $newName;
         }
